@@ -1,6 +1,6 @@
 // init demo 
 $(function(){
-  $('#biruTabs2').biruTabs({delay:3000});
+  $('#biruTabs2').biruTabs({delay:2000});
 });
 
 ;(function($, biru) {
