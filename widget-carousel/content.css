@@ -8,6 +8,7 @@ body{background: #dedfc399;width:360px;margin: 2px auto;}
 /* biruTabs block */
 .TabsBoxU{
   width: 300px;
+  box-shadow: 0px 0px 6px 0px #000;
 }
 
 .biruTabsBox{
