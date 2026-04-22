@@ -1,6 +1,8 @@
 /*  = Demo only
-   body{background: #dedfc399;width:380px;margin: 2px auto;}
----------------------------*/
+-
+body{background: #dedfc399;width:360px;margin: 2px auto;}
+--------------------------*/
+
 /*  = Skin
 ------------------------------*/
 /* biruTabs block */
@@ -38,9 +40,9 @@
 
 .tab {
   display: inline-block;
-  line-height: 1.5em;
+  line-height: 0.8em;
   z-index: 1000;
-  padding: 0.5em 1em;
+  padding: 0.2em 0.2em;
   font-size: 1em;
   cursor: pointer;  
 }
@@ -53,7 +55,7 @@
 
 .biruTab {
   position: relative;
-  padding-top: 2em;
+  padding-top: 3em;
   width: 100%;
   overflow: auto;
   margin: 0 auto;
@@ -77,4 +79,45 @@
   -ms-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
+}
+
+/*  = youtube shorts
+---------------------------*/
+.sh-wrap 
+{position: relative; 
+width: 100%; 
+height: 0; 
+padding-top: 177.7778%;
+padding-bottom: 0; 
+margin-top: 1.6em; 
+margin-bottom: 0.9em; 
+overflow: hidden;
+border-radius: 8px; 
+will-change: transform;
+}
+.sh-wrap iframe {
+position: absolute; 
+width: 100%; 
+height: 100%; 
+top: 0; 
+left: 0; 
+border: none; 
+padding: 0;
+margin: 0;
+}
+
+/*  = CSS
+---------------------------*/
+.txt2{
+  padding: 2% 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#container {
+  box-shadow: 0px 0px 7px -1px #0000ff;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  overflow: auto;
 }
