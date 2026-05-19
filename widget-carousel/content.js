@@ -197,3 +197,48 @@ $(function(){
     });
   };
 })(window.jQuery, false);
+
+// tiktok
+
+let tiktokLoaded = false;
+
+document.getElementById("loadTikTokBtn").addEventListener("click", function () {
+    if (tiktokLoaded) return;
+    tiktokLoaded = true;
+
+    const button = document.getElementById("loadTikTokBtn");
+    const loader = document.getElementById("tiktokLoader");
+    const widget = document.getElementById("tiktokWidget");
+
+    button.style.display = "none";
+    loader.style.display = "flex";
+
+    widget.innerHTML = `
+        <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@scl.pp.ua"
+            data-unique-id="scl.pp.ua"
+            data-embed-type="creator"
+            style="max-width: 330px; min-width: 288px;"
+        >
+            <section>
+                <a target="_blank" href="https://www.tiktok.com/@scl.pp.ua?refer=creator_embed">
+                    @scl.pp.ua
+                </a>
+            </section>
+        </blockquote>
+    `;
+
+    const script = document.createElement("script");
+    script.src = "https://www.tiktok.com/embed.js";
+    script.async = true;
+
+    script.onload = function () {
+        setTimeout(function () {
+            loader.style.display = "none";
+            widget.classList.add("show");
+        }, 800);
+    };
+
+    document.body.appendChild(script);
+});
