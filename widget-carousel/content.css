@@ -126,3 +126,9 @@ margin: 0;
   position: relative;
   overflow: auto;
 }
+
+/*  = tiktok
+------------------------------*/
+.tiktok-box {
+    width: 330px;
+}
